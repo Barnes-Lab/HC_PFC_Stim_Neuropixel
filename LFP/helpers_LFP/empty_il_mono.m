@@ -1,0 +1,25 @@
+function p = empty_il_mono(n_stim, n_chan, lat_range)
+p = struct();
+p.peak_detected             = false;
+p.detection_method          = 'none';
+p.detection_signal          = 'none';
+p.best_channel              = NaN;
+p.best_channel_depth        = NaN;
+p.template_latency          = NaN;
+p.template_amplitude        = NaN;
+p.search_window             = lat_range;
+p.strong_stims              = [];
+p.threshold_channels        = [];
+p.n_threshold_channels      = 0;
+p.best_channel_amplitude    = nan(n_stim, 1);
+p.best_channel_latency      = nan(n_stim, 1);
+p.mean_amplitude            = nan(n_stim, 1);
+p.mean_latency              = nan(n_stim, 1);
+p.sem_amplitude             = nan(n_stim, 1);
+p.all_channel_peaks         = nan(n_stim, n_chan);
+p.all_channel_latencies     = nan(n_stim, n_chan);
+p.best_channel_traces       = [];
+p.monotonicity_rho          = NaN;
+p.monotonicity_p            = NaN;
+p.excluded_channels         = [];
+end
