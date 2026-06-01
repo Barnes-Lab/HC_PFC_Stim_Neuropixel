@@ -1,8 +1,9 @@
 %% 1) INPUT PARAMETERS 
 % FInal Rats
+
 T_PRM.RATS={'10940','10947','10986','10987','10994',...
-    '11039','11040','11042','11043','11044'};
-T_PRM.AGES={'O','O','Y','Y','Y','O','O','O','Y','Y','Y'};
+    '11039','11042','11043','11040','11044'};
+T_PRM.AGES={'O','O','Y','Y','O','O','Y','Y','O','Y'};
 T_PRM.STIM_CHANNEL={5,5,5,5,4,4,4,4,4}; %Channel on which the stim pulse was sent - need for Tprime
 
 % Data Dirs

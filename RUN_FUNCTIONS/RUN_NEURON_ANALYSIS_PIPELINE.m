@@ -2,13 +2,11 @@
 % RUN_NEURON_ANALYSIS_PIPELINE
 % ========================================================================
 % Spike loading, classification, and response analysis on I80 stims. Stats
-% run on PYR only; comparison plots on INT and PYR. Neuron-weighted only.
-% 
-% SS 2026
-% ========================================================================
+% run on PYR only; comparison plots on INT and PYR. 
 clear; close all; clc;
 
 %% INPUT PARAMETERS
+
 
 T_PRM.RATS={'10940','10947','10986','10987','10994',...
     '11039','11042','11043','11040','11044'};

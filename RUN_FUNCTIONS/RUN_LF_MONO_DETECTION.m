@@ -1,13 +1,13 @@
 %% ========================================================================
 % RUN_LF_MONO_DETECTION
 % ========================================================================
-% Mono LFP peak detection in IL. Two-stage: D1 (lowest template min) then
-% V2 (per-channel findpeaks) if D1 hits the window edge.
-% SS 2026
-% ========================================================================
+% Mono LFP peak detection in IL. D1 (lowest template min) then
+% V2 (per-channel findpeaks) 
+
 clear; close all; clc;
 
 %% INPUT PARAMETERS
+
 
 T_PRM.RATS={'10940','10947','10986','10987','10994',...
     '11039','11042','11043','11040','11044'};
